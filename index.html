@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let matrizAlunos = [
+            [123, "João", 9, 9, 9, 9],
+            [235, "Maria", 8, 8, 8, 8],
+            [423, "Pedro", 7, 7, 7, 7]
+        ]
+
+        function matriculaAluno() {
+            let matricula = +prompt("Digite a matrícula do aluno")
+            for (let linha = 0; linha < matrizAlunos.length; linha++) {
+                if (matricula === matrizAlunos[linha][0]) {
+                    let novoNome = prompt("Digite o novo nome do aluno")
+                    matrizAlunos[linha][1] = novoNome
+                    return
+                }
+            }
+            alert("Matrícula não encontrada")
+        } 
+
+        matriculaAluno()
+        
+    
+
+    </script>
+</body>
+</html>
